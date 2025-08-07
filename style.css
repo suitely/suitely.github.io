@@ -1,5 +1,61 @@
 body {
   font-family: "Sarabun", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
+
+
+  --noise: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAD1BMVEWGhoZvb29VVVWbm5s1NTXYsdthAAAABXRSTlMaGhoaGothG24AAASVSURBVEjHFM3BteMwDENRgHIBoOgCRCkFUHYKcPL772kyCyxw3uLCALF1ABDUNnj6GZUCbXR3MLyyYblujA44rN83JWTOC0T07Sqj+ciXeHMPhov2LAxDwVsIVs/jQGLvPWlga7v6xdE3kLhu8TUdrHYszwjzgwSp/726B1MqPmoDfZDDcTbhLmb8IUOe7PPJDlsjyEupPibSVFHA632YGeY19cVdRt2EHKPJagg+ZtLoWjp69MgBZ7bY3UJzNWAS+F3v57hw2X7T/zoR6FjJhc+nNY6Zw6B3/3TLroKG+8m70cGfoY/rAD1v8sT4HsDKbwp2D/C5ca8i5g9iWAguHB6H5L07fG7LdDetPvy/wL4vD21cYfcLx7jk+PZzo6+Cjw3W0JompO7Cl6Ql+LjEJnvlTHhmCTGrLsSTfWSrZavn1jcGyLfKR3taO29A5XqsN6bzWBkR7nloIHmVOYavh7s1cedu7oF9StqfI5/PQYDt7fuzSNdbXzqi7atcAPuoEgIxriLQvtgvxWzV4mnSCqNfggG8cfJWP5ym3txgzkVH852wOVojlojaDgDsXzW3TLmqwSEMx2bi+pTylhe2qQ45uQl0NTPr/epIvMULMaqGpu489kQRNQXHeELrPQYuygbG51L0j6BC/F3LIZ61TSGzL6eQkSIKviY7wfvUWkNOnX4axZ7QDocfA6Ok1n/Lm74QGoLHvtrtBeLB18sFlEQPbkb2YLcC3YDE6XXNZEoTSbGO5KNZVOhGp1/bNXwzOkaeNtH5wz4YTer/SiijY7mBEAjOgAIYdi8AVnoBgHQBSD7nH5PP9i/V1cUHDd7BV8Ofv5lRmr7xVPOZ1ryuR7i3qL9rzEiR2UJHBFdiPMogACiL/bNFJmC3/2tSasewl2OLXxjK08kH+nzqZGgnpyGrshHAwqMpy3D8agMZCFTJF4tYQfmgQSF6jZHbFwcwnewwIO8wmpA172SYjWPvuocaIBwIB/bRmDPkeEKYyEc7GTljYZyIjzw+qXpgyDnAI5njOwIBUEy857B8LUTowAa88ivcR7jgufrqfMEEcI7CwkpxA78EFrBFdOSkZukaClVn0/YrqbUFpqdMU7G+CCNf+eUVA4X3bnfDg38vyYgAkpBHYNmb6zU5e+I2QBaFvTDMDEzd0HWgXrtzgddQH+fJCdDOteCljHDRJS28ng7jKHkMe6J2zyZ9Dh9PxB4Iz2DMOd57xIh7bNHl7bSB1RM4eWzaIlUuE8Mnsqihr6R8PrjPGRpx8ezLzW7NOJ8ve5qiMwP9246Xmoo4DcjhMbgWH4QIAkeOn21UjVxv7pEhLvzrpoAPHadT2xGB/PW6LdCHI+3ckyDMHUTfJxJPPGng110AcCxPD6+B62fvjJoF33SuWSY+Ex9boRVOfPJlqDgdm/30FoRB/f/zBggEmHx+LqPXfZDw6YETdf2Wto+gS5W93FB79XlqRAllF42oboBAKsk4oxGZHdCvVxfbtu3dmEcnt6FxnE4u1W1OCWuooUp4oyJ7tR4l9ECMpBiXudUY8OW6R1GHbjKYr0sKJ0YWj+QfUGuop7WXX08AAAAASUVORK5CYII=);
+
+  background: white;
+  background: var(--noise),
+              radial-gradient(at top left, #c7c7c7 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%),
+              radial-gradient(at bottom right, #c7c7c7 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%),
+              no-repeat center center/cover fixed;
+  ;
+  min-height: 100vh;
+  text-align: center;
+}
+
+article {
+  width: 95%;
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: left;
+}
+figure {
+  margin-top: 4rem;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 1.45rem;
+}
+
+h4 {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  margin: 4rem 0;
+}
+
+figcaption {
+  margin-top: -2rem;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+img {
+  width: clamp(256px, 512px, 80vw);
+  height: clamp(256px, 512px, 80vw);
+}
+
+figure.execs img {
+  width: clamp(256px, 512px, 80vw);
+  height: clamp(171px, 340px, 53vw);
+}
+
+figure.execs figcaption {
+  margin-top: 0;
 }
